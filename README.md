@@ -72,34 +72,60 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
     REST API: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
     GraphQL API: Provides a flexible query language for retrieving and manipulating data.
 
+# 📦 Database Design
+
+The database schema supports a property rental platform where users can manage properties, make bookings, payments, and leave reviews.
+🧑‍💼 Users
+    A user can own multiple Properties
+    A user can make multiple Bookings
+    A user can write multiple Reviews
+    A user can make multiple Payments
+    A user is associated with an Account
+
+🏠 Properties
+    Each Property is owned by a User
+    A Property can have multiple Bookings
+    A Property can receive multiple Reviews
+
+📅 Bookings
+    A Booking is made by a User for a specific Property
+    A Booking is associated with one Payment
+
+💳 Payments
+    A Payment is made by a User
+    A Payment is linked to a specific Booking
+
+📝 Reviews
+    A Review is written by a User for a Property
+    A Property can have many Reviews
 # 📌 Endpoints Overview
 REST API Endpoints
 
-    Users
+    🧑‍💼 Users
         GET /users/ - List all users
         POST /users/ - Create a new user
         GET /users/{user_id}/ - Retrieve a specific user
         PUT /users/{user_id}/ - Update a specific user
         DELETE /users/{user_id}/ - Delete a specific user
 
-    Properties
+    🏠 Properties
         GET /properties/ - List all properties
         POST /properties/ - Create a new property
         GET /properties/{property_id}/ - Retrieve a specific property
         PUT /properties/{property_id}/ - Update a specific property
         DELETE /properties/{property_id}/ - Delete a specific property
 
-    Bookings
+    📅 Bookings
         GET /bookings/ - List all bookings
         POST /bookings/ - Create a new booking
         GET /bookings/{booking_id}/ - Retrieve a specific booking
         PUT /bookings/{booking_id}/ - Update a specific booking
         DELETE /bookings/{booking_id}/ - Delete a specific booking
 
-    Payments
+    💳 Payments
         POST /payments/ - Process a payment
 
-    Reviews
+    📝 Reviews
         GET /reviews/ - List all reviews
         POST /reviews/ - Create a new review
         GET /reviews/{review_id}/ - Retrieve a specific review
