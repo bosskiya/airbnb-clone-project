@@ -133,3 +133,31 @@ REST API Endpoints
         GET /reviews/{review_id}/ - Retrieve a specific review
         PUT /reviews/{review_id}/ - Update a specific review
         DELETE /reviews/{review_id}/ - Delete a specific review
+
+# 🔐 API Security
+
+    Ensuring the security of our API is a top priority. The following practices are implemented to protect data and maintain secure access:
+    🔑 Authentication
+        JWT (JSON Web Tokens) are used for authenticating users.
+        Tokens are required for accessing protected routes.
+        Tokens have expiration times to enhance session security.
+    
+    🔒 Authorization
+        Role-based access control (RBAC) ensures users only access permitted resources.
+        Admin, property owner, and general user roles are enforced at the API level.
+    
+    🧼 Input Validation & Sanitization
+        All incoming data is validated and sanitized to prevent injection attacks.
+        Strong schema validation using libraries like Joi, Zod, or built-in frameworks.
+    
+    📦 HTTPS & Secure Headers
+        All traffic is served over HTTPS.
+        Security headers (e.g., Content-Security-Policy, X-Content-Type-Options) are configured to protect against common attacks.
+    
+    🛡 Rate Limiting & Throttling
+        Rate limiting is applied to prevent abuse and brute-force attacks.
+        IP throttling and account-based limitations are enforced.
+    
+    🧯 Error Handling & Logging
+        Sensitive information is never exposed in error messages.
+        Secure logging practices are in place to monitor and detect suspicious activity.
