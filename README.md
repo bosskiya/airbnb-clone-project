@@ -161,3 +161,27 @@ REST API Endpoints
     🧯 Error Handling & Logging
         Sensitive information is never exposed in error messages.
         Secure logging practices are in place to monitor and detect suspicious activity.
+
+# 🔁 CI/CD Pipeline
+
+    Our CI/CD pipeline automates the process of building, testing, and deploying the application to ensure high code quality and faster delivery.
+    🚀 Continuous Integration (CI)
+        Automated Builds: Every push or pull request triggers a build process.
+        Linting & Formatting: Code is checked against style guides automatically.
+        Unit & Integration Tests: Test suites are executed to validate new changes.
+        Static Code Analysis: Tools like ESLint, Prettier, or SonarQube ensure code consistency and detect vulnerabilities.
+    
+    🔄 Continuous Deployment (CD)
+        Staging Deployment: Code is automatically deployed to a staging environment for QA and testing.
+        Production Deployment: Upon successful review and approval, changes are deployed to the production environment.
+        Rollback Support: Deployment history and versioning allow for safe rollbacks if needed.
+    
+    🔐 Security & Secrets Management
+        Environment variables and secrets are managed securely using tools like GitHub Actions Secrets, Vault, or AWS Secrets Manager.
+        Sensitive data is never hard-coded or exposed in the pipeline.
+    
+    🛠 Tools & Platforms
+        CI Tool: GitHub Actions / GitLab CI / Jenkins (choose one based on your stack)
+        Containerization: Docker is used for consistent runtime environments.
+        Orchestration: Kubernetes / Docker Compose (if applicable)
+        Hosting: AWS / Vercel / Netlify / DigitalOcean (customize as needed)
