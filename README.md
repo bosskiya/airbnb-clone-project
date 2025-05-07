@@ -62,10 +62,17 @@ The backend for the Airbnb Clone project is designed to provide a robust and sca
 
 # 👥 Team Roles
 
-    Backend Developer: Responsible for implementing API endpoints, database schemas, and business logic.
+    Backend Developer: Responsible for implementing the core of an app—its algorithms and business logic. 
+                       Experienced back-end developers not only write code but also do the tasks of an architect—for example, 
+                       devise an app architecture or design and implement the necessary integrations.
     Database Administrator: Manages database design, indexing, and optimizations.
-    DevOps Engineer: Handles deployment, monitoring, and scaling of the backend services.
-    QA Engineer: Ensures the backend functionalities are thoroughly tested and meet quality standards.
+    DevOps Engineer: Serve as a link between the two teams, unifying and automating the software delivery process and helping 
+                     strike a balance between introducing changes quickly and keeping an application stable. Working together 
+                     with software developers, system administrators, and operational staff, DevOps engineers oversee and facilitate code releases on a CI/CD basis.
+    QA Engineer: Verifies whether an application meets the requirements—both functional and non-functional.
+                 Functional requirements define what an application should do, while non-functional requirements specify 
+                 how it should do that. To verify both, QA specialists run various checks, followed by analyzing the test 
+                 results and reporting on the application quality.
 
 # 📈 API Documentation Overview
 
